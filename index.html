@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="main.js"></script>
+
+</head>
+<body>
+
+<center>
+	
+<h3 style="margin-top: 20px; margin-bottom: 20px; ">
+	Adicionar a Lista de Convidados
+</h3>
+
+<div>
+
+<input type="text" placeholder="Escreva o nome dos convidados" id="nome_add_texto">
+<button onclick="submit()" id="submitButton">
+	Enviar
+</button>
+</div>
+
+<br>
+
+<span id="pessoas_horizontal">
+</span>
+
+
+<h3 style="margin-top: 20px; margin-bottom: 20px; ">
+	Lista de Convidados
+</h3>
+
+<div>
+
+    <button onclick="mostrar()" id="mostrarButton">
+        Mostrar
+    </button>
+
+
+	<div id="pessoas_vertical">
+	</div>
+</div>
+
+
+<div>
+<button onclick="sorting()" id="sortButton">
+	Lista Organizada
+</button>
+
+
+<div id="pessoas_organizadas">
+</div>
+</div>
+
+<br>
+
+<div>
+<input type="text" placeholder="Nome_pesquisado" id="nome_pesquisado_texto">
+<button onclick="pesquisar()" id="pesquisarButton">
+	Pesquisar
+</button>
+<h4 id="resposta_pesquisa"></h4>
+</div>
+
+
+</center>
+
+</script>
+</body>
+</html>
