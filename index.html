@@ -1,71 +1,47 @@
 <html>
-<head>
-	<title></title>
-<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="main.js"></script>
+    <head>
 
-</head>
-<body>
+        <title>Listas...</title>
 
-<center>
-	
-<h3 style="margin-top: 20px; margin-bottom: 20px; ">
-	Adicionar a Lista de Convidados
-</h3>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>        
+        <script src="main.js"></script>
 
-<div>
+    </head>
 
-<input type="text" placeholder="Escreva o nome dos convidados" id="nome_add_texto">
-<button onclick="submit()" id="submitButton">
-	Enviar
-</button>
-</div>
+    <body>
 
-<br>
+        <center>
 
-<span id="pessoas_horizontal">
-</span>
+            <h1 id="titulo">Lista de Convidados</h1>
 
+            <hr>
 
-<h3 style="margin-top: 20px; margin-bottom: 20px; ">
-	Lista de Convidados
-</h3>
+            <span>
+                <input id="nome_texto" type="text">
+                <button id="bt_enviar" onclick="sorting();">Enviar</button> 
+            </span>
 
-<div>
+            <hr>
 
-    <button onclick="mostrar()" id="mostrarButton">
-        Mostrar
-    </button>
+            <div>
+                <h2>Convidados</h2>
+                <div>
+                    <h4 id="lista"></h4>
+                </div>
+            </div>
 
+            <hr>
 
-	<div id="pessoas_vertical">
-	</div>
-</div>
+            <div>
+                <span>
+                    <input id="pesquisa_nome" type="text">
+                    <button id="bt_pesquisar" onclick="pesquisar();">Pesquisar</button>
+                </span>
+                <h4 id="resultado"></h4>
+            </div>
+        </center>
 
-
-<div>
-<button onclick="sorting()" id="sortButton">
-	Lista Organizada
-</button>
-
-
-<div id="pessoas_organizadas">
-</div>
-</div>
-
-<br>
-
-<div>
-<input type="text" placeholder="Nome_pesquisado" id="nome_pesquisado_texto">
-<button onclick="pesquisar()" id="pesquisarButton">
-	Pesquisar
-</button>
-<h4 id="resposta_pesquisa"></h4>
-</div>
-
-
-</center>
-
-</script>
-</body>
+    </body>
 </html>
